@@ -1,71 +1,106 @@
-🚀 I built a Machine Learning model to predict Heart Disease with 81% Recall (Healthcare AI Project)
-I’m excited to share one of my recent Machine Learning projects focused on early detection of heart disease using real-world healthcare data (BRFSS 2015 dataset).
+# 🚀 Heart Disease Prediction App (ML + Streamlit)
 
-In healthcare, the cost of a wrong prediction is critical — so my main objective was clear:
-🎯 Maximize recall to reduce missed high-risk patients
-🧠 What I built
+## 🧠 Overview
 
-I developed an end-to-end ML pipeline that includes:
-📊 Data Processing (229,781 records)
-Data cleaning & preprocessing
-Handling class imbalance (balanced dataset strategy)
-Feature engineering on medical indicators
+This project focuses on **early detection of heart disease risk** using real-world health data from the BRFSS 2015 dataset (229,781 records).
 
-🔧 Feature Engineering (Key step)
-I created meaningful health interactions such as:
-Age × BMI (most important feature)
-Alcohol × Smoking behavior
-Income × Hypertension
-BMI transformations (log, squared)
+In healthcare, missing a high-risk patient can have severe consequences.
+👉 This model is therefore **optimized for high recall (sensitivity)** to minimize false negatives.
 
-🤖 Machine Learning Model
-Algorithm: Optimized Random Forest Classifier
-Hyperparameter tuning: Optuna
-Evaluation: medical-focused metrics (Recall, ROC-AUC, F1-score)
+## 🎯 Key Features
 
-📈 Model Performance
-On unseen test data:
-✅ Accuracy: 74.82%
-🎯 Recall: 81.84%
-📊 Precision: 71.60%
-⚖️ F1-score: 76.38%
-📉 ROC-AUC: 0.827
-🏥 Why this matters
+* End-to-end machine learning pipeline
+* Advanced feature engineering on medical indicators
+* Class imbalance handling (balanced dataset strategy)
+* Hyperparameter optimization using Optuna
+* Deployment-ready interface with Streamlit
 
-In healthcare ML systems:
-👉 Missing a patient at risk (false negative) is more dangerous than a false alarm.
-That’s why this model is optimized for high sensitivity (recall), making it suitable for:
-Early disease screening
-Clinical decision support systems
-Preventive healthcare tools
+## 🧪 Model Performance (Test Set)
 
-🔍 Key Insight
-The most influential predictor was:
-🧬 Age × BMI interaction feature
-This confirms that feature engineering is often more powerful than the model itself in real-world ML problems.
+* Accuracy: **74.82%**
+* Recall: **81.84%** ✅ *(priority metric)*
+* Precision: **71.60%**
+* F1 Score: **76.38%**
+* ROC-AUC: **0.827**
 
-💼 What this project demonstrates
-✔ End-to-end Machine Learning workflow
-✔ Feature engineering for healthcare data
-✔ Handling imbalanced datasets
-✔ Model optimization (Optuna)
-✔ Real-world evaluation mindset (recall-first approach)
-✔ Data storytelling for decision-making
+📌 **Key insight:** The most important feature was
+👉 **Age × BMI interaction**, highlighting the power of feature engineering.
 
-🌍 Career Goal
-I’m currently building my path toward:
-👉 Machine Learning Engineer / Data Scientist roles in Canada
-I’m especially interested in:
-Healthcare AI
-Predictive modeling
-Real-world ML systems
 
-📌 Final Thought
-This project reinforced something important:
-Machine Learning is not just about accuracy — it's about impact, especially in sensitive domains like healthcare.
+## 🔬 Feature Engineering Highlights
 
-🔗 Open to opportunities & feedback
-I’m always open to:
-feedback on my projects
-collaboration
-internship / junior ML roles (Canada or remote)
+* Age × BMI (most impactful)
+* Alcohol × Smoking
+* Income × Hypertension
+* BMI transformations (log, squared)
+
+## 🖥️ Streamlit App (Interactive Demo)
+
+An interactive web app was built using Streamlit to make the model accessible to non-technical users.
+
+### 💡 What the app does:
+
+* Users input health indicators (BMI, age, smoking habits, etc.)
+* Model predicts heart disease risk
+* Displays probability + risk interpretation
+
+### ▶️ Run locally:
+
+```bash id="runlocal02"
+
+# Navigate into the project folder
+cd heart-disease-ml
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Run the Streamlit app
+streamlit run app.py
+
+## 📸 App Preview
+
+*(Add screenshots or GIF demo here — highly recommended for recruiters)*
+
+
+## ⚙️ Tech Stack
+
+* Python (Pandas, NumPy, Scikit-learn)
+* Optuna (hyperparameter tuning)
+* Streamlit (deployment)
+* Matplotlib / Seaborn (EDA)
+
+## 🏥 Real-World Relevance
+
+This model is suitable for:
+
+* Early disease screening systems
+* Clinical decision support tools
+* Preventive healthcare analytics
+
+## 📁 Project Structure
+
+```id="structure02"
+├── data/
+├── notebooks/
+├── src/
+├── model/
+├── app.py
+└── README.md
+
+## 🌍 Career Focus
+
+I am actively seeking opportunities as a:
+
+* Machine Learning Engineer
+* Data Scientist
+
+🎯 Focus: Applied AI, Healthcare, Predictive Modeling, Real-world ML Systems
+🌐 Open to on-site, hybrid, or remote roles
+
+## 🤝 Let’s Connect
+
+I’m open to:
+
+* Feedback on this project
+* Collaboration opportunities
+* Internships / Junior roles
