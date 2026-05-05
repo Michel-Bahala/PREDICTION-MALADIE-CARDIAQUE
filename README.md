@@ -1,106 +1,11 @@
-# 🚀 Heart Disease Prediction App (ML + Streamlit)
+🚀 Heart Disease Prediction App (ML + Streamlit)🌐 Live Demo🚀 Try the app here:👉 Streamlit Web App Link🧠 OverviewThis project focuses on the early detection of heart disease risk by leveraging real-world health data from the 2015 BRFSS dataset (229,781 records).In the healthcare sector, failing to identify a high-risk patient can have severe consequences. Consequently, this model is optimized for high Recall (Sensitivity) to minimize false negatives.🎯 Key FeaturesEnd-to-End ML Pipeline: From data cleaning to cloud deployment.Advanced Feature Engineering: Creation of specialized medical indicators.Class Imbalance Management: Implementation of balanced dataset strategies.Hyperparameter Tuning: Systematic optimization using Optuna.🧪 Model Performance (Test Set)The model demonstrates robust results, particularly in its detection capability:MetricScoreRecall81.84% ✅Accuracy74.82%Precision71.60%F1-Score76.38%ROC-AUC0.827📌 Key Insight: The Age × BMI interaction emerged as the most influential feature, highlighting the power of domain-specific feature engineering.🔬 Feature Engineering HighlightsThe model's success is driven by synthetic variables that better reflect medical realities:Age × BMI: The impact of weight increases significantly with age.Alcohol × Smoking: Analyzing the synergistic effect of high-risk behaviors.Income × Hypertension: Exploring correlations between socio-economic factors and cardiovascular health.BMI Transformations: Using logarithmic and squared transformations to capture non-linear relationships.🖥️ Streamlit Interactive DemoAn interactive web application developed with Streamlit allows users to easily engage with the model.Patient Metrics Input: User-friendly form for health indicators.Risk Prediction: Real-time heart disease risk calculation.Probability & Interpretation: Clear display of results and medical context.⚙️ Technologies UsedLanguage: Python 🐍Data Analysis: Pandas, NumPyMachine Learning: Scikit-learn, XGBoost / LightGBMOptimization: OptunaVisualization: Matplotlib, SeabornDeployment: Streamlit▶️ Local ExecutionBash# Clone the repository
+git clone https://github.com/Michel-Bahala/PREDICTION-MALADIE-CARDIAQUE.git
 
-## 🧠 Overview
-
-This project focuses on **early detection of heart disease risk** using real-world health data from the BRFSS 2015 dataset (229,781 records).
-
-In healthcare, missing a high-risk patient can have severe consequences.
-👉 This model is therefore **optimized for high recall (sensitivity)** to minimize false negatives.
-
-## 🎯 Key Features
-
-* End-to-end machine learning pipeline
-* Advanced feature engineering on medical indicators
-* Class imbalance handling (balanced dataset strategy)
-* Hyperparameter optimization using Optuna
-* Deployment-ready interface with Streamlit
-
-## 🧪 Model Performance (Test Set)
-
-* Accuracy: **74.82%**
-* Recall: **81.84%** ✅ *(priority metric)*
-* Precision: **71.60%**
-* F1 Score: **76.38%**
-* ROC-AUC: **0.827**
-
-📌 **Key insight:** The most important feature was
-👉 **Age × BMI interaction**, highlighting the power of feature engineering.
-
-
-## 🔬 Feature Engineering Highlights
-
-* Age × BMI (most impactful)
-* Alcohol × Smoking
-* Income × Hypertension
-* BMI transformations (log, squared)
-
-## 🖥️ Streamlit App (Interactive Demo)
-
-An interactive web app was built using Streamlit to make the model accessible to non-technical users.
-
-### 💡 What the app does:
-
-* Users input health indicators (BMI, age, smoking habits, etc.)
-* Model predicts heart disease risk
-* Displays probability + risk interpretation
-
-### ▶️ Run locally:
-
-```bash id="runlocal02"
-
-# Navigate into the project folder
-cd heart-disease-ml
+# Navigate to the project folder
+cd PREDICTION-MALADIE-CARDIAQUE
 
 # Install dependencies
 pip install -r requirements.txt
 
-# Run the Streamlit app
-streamlit run app.py
-
-## 📸 App Preview
-
-*(Add screenshots or GIF demo here — highly recommended for recruiters)*
-
-
-## ⚙️ Tech Stack
-
-* Python (Pandas, NumPy, Scikit-learn)
-* Optuna (hyperparameter tuning)
-* Streamlit (deployment)
-* Matplotlib / Seaborn (EDA)
-
-## 🏥 Real-World Relevance
-
-This model is suitable for:
-
-* Early disease screening systems
-* Clinical decision support tools
-* Preventive healthcare analytics
-
-## 📁 Project Structure
-
-```id="structure02"
-├── data/
-├── notebooks/
-├── src/
-├── model/
-├── app.py
-└── README.md
-
-## 🌍 Career Focus
-
-I am actively seeking opportunities as a:
-
-* Machine Learning Engineer
-* Data Scientist
-
-🎯 Focus: Applied AI, Healthcare, Predictive Modeling, Real-world ML Systems
-🌐 Open to on-site, hybrid, or remote roles
-
-## 🤝 Let’s Connect
-
-I’m open to:
-
-* Feedback on this project
-* Collaboration opportunities
-* Internships / Junior roles
+# Run the application
+streamlit run streamlit_app.py
