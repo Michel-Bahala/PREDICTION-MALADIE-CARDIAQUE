@@ -26,7 +26,12 @@ Hyperparameter Tuning: Systematic optimization using Optuna.
 
 The model demonstrates robust results, particularly in its detection capability:
 
-MetricScoreRecall81.84% ✅Accuracy74.82%Precision71.60%F1-Score76.38%ROC-AUC0.827
+MetricScore
+Recall81.84% ✅
+Accuracy74.82%
+Precision71.60%
+F1-Score76.38%
+ROC-AUC0.827
 
 📌 Key Insight: The Age × BMI interaction emerged as the most influential feature, highlighting the power of domain-specific feature engineering.
 
@@ -58,7 +63,7 @@ Language: Python 🐍
 
 Data Analysis: Pandas, NumPy
 
-Machine Learning: Scikit-learn, XGBoost / LightGBM
+Machine Learning: Scikit-learn, LogisticRegression
 
 Optimization: Optuna
 
